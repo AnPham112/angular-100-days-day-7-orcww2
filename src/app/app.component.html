@@ -1,0 +1,14 @@
+<hello [name]="name"></hello>
+
+<!-- In progress bar component, it has default values, so it can render progress with tomato color -->
+<progress-bar></progress-bar>
+<br />
+<progress-bar
+  [progress]="currentProgress"
+  [progressColor]="'dodgerblue'"
+></progress-bar>
+<br />
+
+<button (click)="currentProgress = currentProgress + 1">
+  Increase Progress
+</button>
